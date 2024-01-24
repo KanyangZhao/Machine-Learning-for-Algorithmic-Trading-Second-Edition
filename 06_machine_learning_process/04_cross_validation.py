@@ -14,7 +14,7 @@ print(data)
 
 print(train_test_split(data, train_size=.8))
 
-kf = KFold(n_splits=5)
+kf = KFold(n_splits=5) #实例化一个类
 for train, validate in kf.split(data):
     print(train, validate)
 
